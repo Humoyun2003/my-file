@@ -1,0 +1,17 @@
+appdirs
+asgiref
+certifi
+distlib
+Django
+django-ckeditor
+django-js-asset
+filelock
+gunicorn
+Pillow
+pipenv
+pytz
+six
+sqlparse
+virtualenv
+virtualenv-clone
+whitenoise

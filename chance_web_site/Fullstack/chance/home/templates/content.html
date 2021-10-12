@@ -1,0 +1,335 @@
+{% load static %}
+
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h2><em>Chance</em> ga xush kelibsiz!</h2>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Chance haqida</h4>
+              </div>
+              <div class="content-hide">
+                <p>Bizning Chance o'quv markazimiz  Shirin chorraha,Lutfiy ko'chasi, Moliya bo'limi 7- qavatda joylashgan</p>
+                <div class="scroll-to-section"><a href="#section5">Batafsil</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>O'qitish tizimi</h4>
+              </div>
+              <div class="content-hide">
+                <p>Chance o'quv markazida darslar haftada 3 marta 2 soatdan dars bo'ladi</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Barcha Fanlar</h4>
+              </div>
+              <div class="content-hide">
+                <ul>
+                  <li>Kimyo-Biologiya</li>
+                  <li>Rus tili</li>
+                  <li>Pochemuchka</li>
+                  <li>Ingliz til ></li>
+                    <li>___gramatika</li>
+                    <li>___general english</li>
+                    <li>___IELTS ></li>
+                      <li>______beginner</li>
+                      <li>______elementary</li>
+                      <li>______intermediate</li>
+                      <li>______pre-intermeadiate</li>
+                      <li>______advanced</li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{#  <section class="section coming-soon" data-section="section3">#}
+{#    <div class="container">#}
+{#      <div class="row">#}
+{#        <div class="col-md-7 col-xs-12">#}
+{#          <div class="continer centerIt">#}
+{#            <div>#}
+{#              <h4>Biz bilan <em>birga harakat</em>da bo'ling</h4>#}
+{#              <h4>Bizning faoliyat tajribamiz!</h4>#}
+{#              <div class="counter">#}
+{##}
+{#                <div class="years">#}
+{#                  <div class="value">00</div>#}
+{#                  <span>Yil</span>#}
+{#                </div>#}
+{##}
+{#                <div class="days">#}
+{#                  <div class="value">00</div>#}
+{#                  <span>Kun</span>#}
+{#                </div>#}
+{##}
+{#                <div class="hours">#}
+{#                  <div class="value">00</div>#}
+{#                  <span>Soat</span>#}
+{#                </div>#}
+{##}
+{#                <div class="minutes">#}
+{#                  <div class="value">00</div>#}
+{#                  <span>Minut</span>#}
+{#                </div>#}
+{##}
+{#                <div class="seconds">#}
+{#                  <div class="value">00</div>#}
+{#                  <span>Sekund</span>#}
+{#                </div>#}
+{##}
+{#              </div>#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="col-md-5">#}
+{#          <div class="right-content">#}
+{#            <div class="top-content">#}
+{#              <h6>Ma'lumot qoldiring va adminstrator siz bilan a'loqaga chiqadi</h6>#}
+{#            </div>#}
+{##}
+{##}
+{##}
+{#            <form id="contact" action="{% url 'index' %}" method="post">#}
+{#              <div class="row">#}
+{#                <div class="col-md-12">#}
+{#                    {% csrf_token %}#}
+{#                  <fieldset>#}
+{#                    <input name="name" type="text" class="form-control" id="name" placeholder="Ismingiz" required="">#}
+{#                  </fieldset>#}
+{#                </div>#}
+{#                <div class="col-md-12">#}
+{#                  <fieldset>#}
+{#                    <input name="email" type="text" class="form-control" id="email" placeholder="Email pochtangiz" required="">#}
+{#                  </fieldset>#}
+{#                </div>#}
+{#                <div class="col-md-12">#}
+{#                  <fieldset>#}
+{#                    <input name="phone" type="text" class="form-control" id="phone-number" placeholder="Telefon Raqamingiz" required="">#}
+{#                  </fieldset>#}
+{#                </div>#}
+{#                <div class="col-md-12">#}
+{#                    {% if form.errors %}#}
+{#                  {% for field in signup_form %}#}
+{#                      {% for error in field.errors %}#}
+{#                          <strong style="text-align: center;color: red;">{{ error|escape }}</strong><br/>#}
+{#                      {% endfor %}#}
+{#                  {% endfor %}#}
+{#              {% endif %}#}
+{#                  <fieldset>#}
+{#                    <button type="submit" id="form-submit" class="button">Yuborish</button>#}
+{#                  </fieldset>#}
+{#                </div>#}
+{#              </div>#}
+{#            </form>#}
+{##}
+{##}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </section>#}
+
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="{% static 'assets/images/pochemuchka.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Lola Safiyeva</h4>
+              <p>Rus tili Pochemuchka o'qituvchisi <br> +998909159416</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/matematika.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Akbar Farmonov</h4>
+              <p>Matematika o'qituvchisi <br> +998912109090</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/fizika.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Hojiyev Farrux</h4>
+              <p>Fizika o'qituvchisi <br> +998936576007</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/english.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Maniyoz Abdullajonov</h4>
+              <p>Ingliz tili o'qituvchisi <br> +998909514947</p>
+            </div>
+          </div><div class="item">
+            <img src="{% static 'assets/images/general-english.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Murodov Abdulloh</h4>
+              <p>Geleral English o'qituvchisi <br> +998903358334</p>
+            </div>
+          </div><div class="item">
+            <img src="{% static 'assets/images/kimyo-bio.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Sardorxon Sharofov</h4>
+              <p>Kimyo biologiya o'qituvchisi <br> +998996912801</p>
+            </div>
+          </div><div class="item">
+            <img src="{% static 'assets/images/kids-english.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Ozoda Imomaliyeva</h4>
+              <p>Kid's English o'qituvchisi <br> +998932922727</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <h4>Chance o'quv markazi haqida yanada ko'proq ma'lumotga ega bo'lish uchun videoni tomosha qiling</h4>
+            <h4><em>Chance asoschisi</em></h4>
+              <div class="left">
+                <p>Boburbek Ravshanov- IELTS o'qituvchisi
+                  Qashqadaryo viloyatida tug'ilgan. Oliy ta'limni O'zbekiston Jahon tillari universitetida tamomlagan. Magistraturani ham aynan Jahon tillarida yakunlagan va ish faoliyatini ushbu dargohda boshlagan. Keyinchalik ko'plab o'quv markazlarda dars bergan.</p>
+              </div>
+              <div class="right">
+                <img src="{% static 'assets/images/chance-asoschisi.jpg' %}" alt="" width="250px" height="200px">
+              </div>
+            <div class="main-button"><a rel="nofollow" href="https://t.me/Chance_Education_Center" target="_blank">Adminga murojat</a></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <figure>
+              <video src="{% static 'assets/videos/chance-haqida.mp4' %}" controls class="play" width="600px" height="430px"></video>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Biz bilan a'loqada bo'lishingiz uchun</h2>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Ma'lumot qoldiring va adminstrator siz bilan a'loqaga chiqadi</h6>
+            </div>
+
+
+
+            <form id="contact" action="{% url 'index' %}" method="post">
+              <div class="row">
+                <div class="col-md-12">
+                    {% csrf_token %}
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Ismingiz" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Email pochtangiz" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone" type="text" class="form-control" id="phone-number" placeholder="Telefon Raqamingiz" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                    {% if form.errors %}
+                  {% for field in signup_form %}
+                      {% for error in field.errors %}
+                          <strong style="text-align: center;color: red;">{{ error|escape }}</strong><br/>
+                      {% endfor %}
+                  {% endfor %}
+              {% endif %}
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Yuborish</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+{#        <div class="col-md-6">#}
+{##}
+{##}
+{##}
+{##}
+{#          <form id="contact" action="{% url 'index' %}" method="post">#}
+{#            <div class="row">#}
+{#              <div class="col-md-6">#}
+{#                  {% csrf_token %}#}
+{#                  <fieldset>#}
+{#                    <input name="name" type="text" class="form-control" id="name" placeholder="Ismingiz" required="">#}
+{#                  </fieldset>#}
+{#                </div>#}
+{#                <div class="col-md-6">#}
+{#                  <fieldset>#}
+{#                    <input name="email" type="text" class="form-control" id="email" placeholder="Email pochtangiz" required="">#}
+{#                  </fieldset>#}
+{#                </div>#}
+{#              <div class="col-md-12">#}
+{#                <fieldset>#}
+{#                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Fikringiz..." required=""></textarea>#}
+{#                </fieldset>#}
+{#              </div>#}
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Yuborish</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.283156529627!2d69.17826481479315!3d41.28094151055131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8944c4d4d4e7%3A0x52fd7d3cb07a18e3!2sChance%20Education%20Centre!5e0!3m2!1suz!2s!4v1623787064070!5m2!1suz!2s" width="100%" height="422" style="border:0;" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
